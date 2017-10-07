@@ -1,0 +1,233 @@
+[
+   [{
+      "title":"Frequently Used",
+      "class":"panel-primary",
+      "width":"col-md-8",
+      "listw":"col-md-6",
+      "links":[
+         {
+            "link":"http://103.194.45.139/prtest/prehome.jsp",
+            "text":"MIS",
+            "tags":["APFC","RPFC", "COMP", "PENSION"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/fointerface/",
+            "text":"Unified Portal",
+            "tags":["APFC","ACCOUNTS","RPFC","COMP"]
+         },
+         {
+            "link":"http://cams.epfoservices.com/epfo/adminLogin",
+            "text":"CAIU Login",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
+            "link":"http://164.100.94.185/epfo/login.php",
+            "text":"E-court",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
+            "link":"http://hr.epfoservices.com/hrm/sghshome.aspx",
+            "text":"SGHS",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://iwu.epfoservices.com:8176/epfo/",
+            "text":"Compliance MIS",
+            "tags":["APFC","RPFC"]
+         },
+         {
+            "link":"https://www.limbs.gov.in/",
+            "text":"LIMBS",
+            "tags":["APFC","LEGAL"]
+         },
+         {
+            "link":"http://www.epfigms.gov.in/epfoffice/",
+            "text":"EPFIGMS",
+            "tags":["APFC","RPFC", "PGHS"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/loadEstSearchHome",
+            "text":"Establishment Search",
+            "tags":["APFC","RPFC","COMP"]
+         },
+         {
+            "link":"http://gem.gov.in/",
+            "text":"GEM",
+            "tags":["APFC", "ADMIN"]
+         },
+         {
+            "link":"https://shramsuvidha.gov.in/home",
+            "text":"Shram Suvidha Portal",
+            "tags":["APFC", "PGHS", "RPFC"]
+         },
+         {
+            "link":"https://pmrpy.gov.in/",
+            "text":"PMRPY",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://aadhaar.epfoservices.com:8080/EPFOWeb/",
+            "text":"Aadhaar Seeding",
+            "tags":["APFC","COMP","RPFC","ACC"]
+         },
+         {
+            "link":"http://mail.gov.in",
+            "text":"Mail",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://www.epfindia.com/site_en/circulars.php",
+            "text":"Office circulars",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://www.epfindia.com/site_en/app_tfr_post.php",
+            "text":"Transfers",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"http://hr.epfoservices.com/hrm/",
+            "text":"HRM Site",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://jura.wi.mit.edu/cgi-bin/bioc/tools/compare.cgi",
+            "text":"List comparison",
+            "tags":["APFC","RPFC", "COMP"]
+         }
+      ]
+   },
+   {
+      "title":"Dashboard",
+      "class":"panel-success",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"http://epfindia.com/site_docs/PDFs/dashboard/dash_key_parameter.html",
+            "text":"Dashboard Key Parameters",
+            "tags":["APFC","RPFC","ACC"]
+         },
+         {
+            "link":"https://unifiedportal-epfo.epfindia.gov.in/publicPortal/no-auth/misReport/home/dashboard",
+            "text":"Dashboard KYC",
+            "tags":["APFC","RPFC","ACC","COMP"]
+         },
+         {
+            "link":"http://103.194.45.139/prtest/Claims.jsp",
+            "text":"Dashboard Claims",
+            "tags":["APFC","RPFC","ACC","ACCOUNTS"]
+         }
+      ]
+   },
+   {
+      "title":"Forms",
+      "class":"panel-warning",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2016-2017/Composite_Claim_Forms_31792.pdf",
+            "text":"Form 19,10C, 31",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://www.epfindia.com/site_docs/PDFs/Circulars/Y2017-2018/Manual_CCF_DeathCase_9536.pdf",
+            "text":"Form 20, 10D, 5IF",
+            "tags":["APFC"]
+         }
+      ]
+   }
+   ],
+   [
+   {
+      "title":"Employer",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/",
+            "text":"Unified portal (Establishment)",
+            "tags":["APFC","RPFC"]
+         },
+         {
+            "link":"http://epfindia.com/site_en/Principal_Employer.php",
+            "text":"Principal Employer",
+            "tags":["APFC","RPFC"]
+         },
+         {
+            "link":"http://103.194.45.139/TRRN_SEARCH/",
+            "text":"TRRN SEARCH",
+            "tags":["APFC","RPFC"]
+         },
+         {
+            "link":"https://unifiedportal-emp.epfindia.gov.in/epfo/public/olre/registerOwner",
+            "text":"Estt. Registration",
+            "tags":["APFC","RPFC"]
+         }
+      ]
+   },
+   {
+      "title":"Employee",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"https://unifiedportal-mem.epfindia.gov.in/memberinterface/",
+            "text":"Unified Portal (Member Interface)",
+            "tags":["APFC"]
+         },
+         {
+            "link":"https://passbook.epfindia.gov.in/MemberPassBook/Login.jsp",
+            "text":"Passbook",
+            "tags":["APFC"]
+         },
+         {
+            "link":"https://passbook.epfindia.gov.in/MemClaimStatusUAN/",
+            "text":"Claim Status",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://103.194.45.139/UANDEDUP/",
+            "text":"PF account Merge",
+            "tags":["APFC"]
+         },
+         {
+            "link":"http://103.194.45.139/INOPHelpDesk/",
+            "text":"Inoperative Helpdesk",
+            "tags":["APFC"]
+         },
+         {
+            "link":"https://play.google.com/store/apps/details?id=com.phonegap.helloepfo&hl=en",
+            "text":"M-epf App",
+            "tags":["APFC"]
+         },
+         {
+            "link":"tel:011-22901406",
+            "text":"Miss Call 011-22901406 for fund detail",
+            "tags":["APFC"]
+         }
+      ]
+   },
+   {
+      "title":"Pensioner",
+      "class":"panel-info",
+      "width":"col-md-4",
+      "links":[
+         {
+            "link":"http://103.194.45.139/PPOquery/",
+            "text":"PPO Query",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"http://59.180.231.60:9091/prtest/JEEVAN%20PRAMAAN%20ENQUIRY.jsp",
+            "text":"Jeevan Pramaan Enquiry",
+            "tags":["APFC","PENSION"]
+         },
+         {
+            "link":"https://jeevanpramaan.gov.in/",
+            "text":"Jeevan Pramaan Website",
+            "tags":["APFC","PENSION"]
+         }
+      ]
+   }
+   ]
+]

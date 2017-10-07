@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+.list-group {
+	margin-bottom:0px;
+}
+.vis-hidden{
+     visibility: hidden;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container" ng-app="myApp" ng-controller="namesCtrl">
+	<div class="btn-group">
+			<button type="button" ng-click="change('PENSION')" ng-class="{'active':(test=='PENSION')}" class="btn btn-default">Pensioner</button>
+			<button type="button" ng-click="change('EMPLOYEE')" ng-class="{'active':(test=='EMPLOYEE')}" class="btn btn-default">Employee</button>
+			<button type="button" ng-click="change('EMPLOYER')" ng-class="{'active':(test=='EMPLOYER')}" class="btn btn-default">Employer</button>
+			<button type="button" ng-click="change('APFC')" ng-class="{'active':(test=='APFC')}" class="btn btn-default">Office</button>
+			<a href="./circulars" class="btn btn-sq-lg btn-default">Circulars</a>
+			<a href="./contacts" class="btn btn-sq-lg btn-default"><i class="fa fa-phone"></i></a>
+	</div>
+<h3>Dashboard</h3>
+<div ng-repeat="rows in data" class="row">
+	<div ng-repeat="x in rows" class="{{x.width}}" ng-if="(x.links| filter:{'tags':  test}).length!=0">
+		<div class="panel {{x.class}}"> <!--ng-class="{'vis-hidden': (x.links| filter:{'tags':  test}).length==0}">-->
+			<div class="panel-heading">{{x.title}}</div>
+			<div class="panel-body">
+				<div class="list-group">
+				<a ng-repeat="item in x.links | filter:{'tags':  test}" href="{{item.link}}" target="_blank" class="list-group-item {{x.listw}}">{{item.text}}</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+		
+	
+  
+		
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+    //Disable full page
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+  }); 
+  var app = angular.module('myApp', ['ngCookies']);
+  app.controller('namesCtrl', ['$scope','$cookies','$cookieStore', '$http', function($scope,$cookies,$cookieStore, $http) {
+                                 $scope.data = [];
+                                 var favoriteCookie = $cookies.get('cookieval');
+  				if ( favoriteCookie ) {
+   					$scope.test= favoriteCookie
+  				} else {
+    					$scope.test='PENSION';
+    					$cookies.put('cookieval','');
+  				}
+                                $scope.change = function(text) {
+                                  $scope.test=text;
+                                  $cookies.put('cookieval',text);
+                                 };
+                                 $http({
+                                   method: 'GET',
+                                   url: 'contents.json'
+                                 }).then(function (success){
+                                   $scope.data = success.data;
+                                 },function (error){
+                                   console.log(error)
+                                 });
+                               }]);
+		</script>
+	</body>
+</html>
